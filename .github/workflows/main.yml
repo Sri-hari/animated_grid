@@ -16,12 +16,12 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adopt'
-      - id: main
+          distribution: 'adopt' 
+      - id: Compile
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        uses: applibgroup/HarmonyOsSdk@v1.3
+        uses: applibgroup/HarmonyOS-build@v1
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with: 
