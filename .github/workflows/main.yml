@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           LANG: JAVA
-        uses: applibgroup/HarmonyOS-build@v2.6
+        uses: applibgroup/HarmonyOS-build@v2.7
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with: 
